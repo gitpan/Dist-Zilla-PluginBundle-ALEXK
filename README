@@ -1,0 +1,42 @@
+NAME
+    Dist::Zilla::PluginBundle::ALEXK - Dist::Zilla configuration the way
+    ALEXK does it
+
+VERSION
+    version 0.001
+
+BUNDLE CONTENT
+      [@Basic]
+      [BumpVersionFromGit]
+      [PkgVersion]
+      [Prepender]
+      [TaskWeaver] ; if bundle option 'is_task' is true else
+      [PodWeaver] 
+      [ReadmeFromPod]
+      [CompileTests] ; with fake_home = 1
+      [MetaTests]
+      [PodSyntaxTests]
+      [PodCoverageTests]
+      [PortabilityTests]
+      [MinimumPerl]
+      [AutoPrereq] ; if bundle option 'auto_prereq' is not set to false
+      [Git::Check]
+      [CheckChangesTests]
+      [CheckExtraTests]
+      [TestRelease]
+      [ConfirmRelease]
+      [FakeRelease] ; if bundle option 'fake_release' is true else
+      [UploadToCPAN]
+      [Git::Commit]
+      [Git::Tag]
+      [Git::Push] ; takes 'git_remote' option and defaults to 'origin'
+
+AUTHOR
+    Alexander Kühne <alexk@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Alexander Kühne.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+

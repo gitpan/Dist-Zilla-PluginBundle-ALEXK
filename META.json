@@ -1,0 +1,54 @@
+{
+   "abstract" : "Dist::Zilla configuration the way ALEXK does it",
+   "author" : [
+      "Alexander K\u00fchne <alexk@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-PluginBundle-ALEXK",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla" : "3.101450",
+            "Dist::Zilla::Plugin::BumpVersionFromGit" : 0,
+            "Dist::Zilla::Plugin::CompileTests" : 0,
+            "Dist::Zilla::Plugin::MinimumPerl" : 0,
+            "Dist::Zilla::Plugin::PodWeaver" : 0,
+            "Dist::Zilla::Plugin::PortabilityTests" : 0,
+            "Dist::Zilla::Plugin::Prepender" : 0,
+            "Dist::Zilla::Plugin::ReadmeFromPod" : 0,
+            "Dist::Zilla::Plugin::TaskWeaver" : 0,
+            "Dist::Zilla::PluginBundle::Filter" : 0,
+            "Dist::Zilla::PluginBundle::Git" : 0,
+            "Dist::Zilla::Role::PluginBundle::Easy" : 0,
+            "Moose" : "0.99",
+            "Moose::Autobox" : 0,
+            "autodie" : "2.00",
+            "namespace::autoclean" : "0.09",
+            "perl" : "5.006"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "stable",
+   "version" : "0.001"
+}
+
